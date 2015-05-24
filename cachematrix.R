@@ -1,4 +1,4 @@
-## This file contains functions t calculate inverse of a matrix
+## This file contains functions to calculate inverse of a matrix
 
 
 ## makeCacheMatrix is function  which creates list of functions
@@ -21,7 +21,7 @@ makeCacheMatrix <- function(x = matrix()) {
 ## cacheSolve function calculates inverse of matrix if not already calculated. 
 
 cacheSolve <- function(x, ...) {
-  i<-x$getinverse
+  i<-x$getinverse()
   if(!is.null(i)){
     message("getting cached data")
     return(i)
